@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteor Fruits</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <div class="home" id="home">
+      <div class="container" id="container">
+        <h1 class="title">Meteor Fruit</h1>
+        <select id="level" class="level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <input type="text" id="player-name" class="player-name " placeholder="Enter your name" />
+        <div class="container-btn">
+            <button id="btn-start" class="btn-start">Start</button>
+            <button id="mute-btn" class="btn">Mute</button>
+        </div>
+        <div class="rank">
+          <table border="1">
+            <thead>
+              <td>No</td>
+              <td>Name Player</td>
+              <td>Level</td>
+              <td>Score</td>
+            </thead>
+            <tbody id="scoreboard"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="dist/script.js"></script>
+  </body>
+</html>
